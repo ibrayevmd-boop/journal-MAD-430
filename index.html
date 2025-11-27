@@ -9,8 +9,8 @@
 
   <style>
     :root{
-      --bg-beige: #f5efe6;      /* бежевый фон */
-      --accent: #b35a2a;        /* акцентный цвет */
+      --bg-beige: #f5efe6;     
+      --accent: #b35a2a;       
       --text-dark: #222222;
       --font-heading: 'Montserrat', sans-serif;
       --font-body: 'Merriweather', serif;
@@ -30,7 +30,7 @@
       -moz-osx-font-smoothing:grayscale;
     }
 
-    /* Header */
+
     .site-header{
       position:fixed;
       top:0;left:0;
@@ -54,17 +54,17 @@
 
     main{ margin-top: calc(var(--header-height) + 10px); }
 
-    /* Apple-style stacked sections (упрощённо и надёжно) */
+  
     .article-section{
       position:relative;
       min-height:100vh;
     }
 
 .article-section article{
-  position: relative;       /* больше не прилипает */
-  margin: 40px auto;        /* отделяем статьи друг от друга */
+  position: relative;       
+  margin: 40px auto;       
   width: min(1100px, 86%);
-  min-height: auto;         /* высота под контент */
+  min-height: auto;         
   padding:56px 36px;
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(4px);
@@ -76,9 +76,9 @@
   display:block;
 }
 
-    /* чтобы следующая секция "наезжала" сверху */
+  
 .article-section:not(:first-child) article {
-  margin-top: 40px; /* просто отделяем секции друг от друга */
+  margin-top: 40px; 
 }
 
     .article-section article.is-behind{
@@ -92,7 +92,7 @@
 
     .author{ margin-top:18px; font-style:italic; color: rgba(0,0,0,0.6) }
 
-    /* изображения статей (уменьшенные) */
+   
     .article__image, .carousel img, .article-section img {
       max-width:500px;
       width:100%;
@@ -104,12 +104,12 @@
 
     .lead{ font-size:1.15rem; color:var(--accent); margin-bottom:12px }
 
-    /* --- Carousel (рабочая для каждой секции) --- */
+
 .carousel{ 
   position:relative; 
   width:100%; 
   max-width:700px; 
-  margin:30px 0 50px;  /* добавили нижний отступ, чтобы текст под каруселью был виден */
+  margin:30px 0 50px;  
   overflow:hidden; 
   border-radius:10px; 
 }
@@ -125,7 +125,7 @@
     .carousel .prev{ left:10px } .carousel .next{ right:10px }
     .carousel-btn:hover{ background: rgba(0,0,0,0.65) }
 
-    /* Floating burger (left top) */
+   
     .floating-menu{
       position:fixed;
       top:18px;
@@ -133,7 +133,7 @@
       width:56px; height:56px;
       border-radius:50%;
       display:flex; flex-direction:column; gap:6px; align-items:center; justify-content:center;
-      background: rgba(255,255,255,0.40); /* легкая прозрачность */
+      background: rgba(255,255,255,0.40); 
       backdrop-filter: blur(6px);
       z-index:1300;
       cursor:pointer;
@@ -146,7 +146,7 @@
       width:60%; height:3px; border-radius:2px; background:var(--text-dark);
     }
 
-    /* Minimal modal (categories) */
+   
     .modal{
       display:none;
       position:fixed; inset:0;
@@ -182,10 +182,10 @@
     .modal-list a:hover{ background: rgba(0,0,0,0.04); transform: translateX(6px) }
     .modal-list a.active{ color:var(--accent) }
 
-    /* footer */
+ 
     footer{ padding:28px 20px; text-align:center; color:rgba(0,0,0,0.6) }
 
-    /* Responsive tweaks */
+  
     @media (max-width:900px){
       .article-section article{ padding:36px 14px; width:92% }
       .floating-menu{ width:48px; height:48px; top:12px; left:12px }
@@ -221,7 +221,7 @@
 </head>
 <body>
 
-  <!-- Floating burger button (открывает окно категорий) -->
+
   <button id="openModalBtn" class="floating-menu" aria-haspopup="dialog" aria-expanded="false" aria-controls="categoryModal">
     <span class="line"></span>
     <span class="line"></span>
@@ -234,7 +234,7 @@
   </header>
 
   <main>
-    <!-- SECTION 1 -->
+
     <section id="flowers" class="article-section">
       <article>
         <h2>Why We Give Flowers? The Story of an Ancient Ritual</h2>
@@ -261,7 +261,7 @@ Even as I write this, I keep thinking about the strange, beautiful contradiction
 </article>
     </section>
 
-    <!-- SECTION 2 -->
+  
     <section id="mirror" class="article-section">
       <article>
         <h2>Mirror. Why People Feared Their Own Reflection</h2>
@@ -285,13 +285,13 @@ We found that nearly every culture had a version of this fear. The Greeks believ
 And maybe that is why mirrors have never been “just objects.” They have been instruments of prophecy, tools of vanity, portals in myth, symbols in literature, and quiet witnesses in every bedroom. They hide nothing, but they also reveal things we do not always want to see - not supernatural creatures, but our own truths, anxieties, and unfiltered selves.
 So yes, humans feared mirrors for thousands of years. Maybe because they saw spirits. Maybe because they sensed the uncanny. Maybe because they recognized something intimate and ancient: that a reflection is not only an image, but a moment of encounter. A meeting with the self you cannot escape.
 And if I still sometimes avoid looking into the mirror at 3 a.m., maybe I am simply continuing a very old human tradition - one that reminds me that even the most ordinary objects can carry centuries of myth, memory, and mystery inside them.</p>
-        <p class="author"> By Aissel Velieva</p>
   </div>
   <span class="read-more">Read more</span>
+                <p class="author"> By Aissel Velieva</p>
       </article>
     </section>
 
-    <!-- SECTION 3 -->
+  
     <section id="vangogh" class="article-section">
       <article>
         <h2>An Underrated Genius of His Time: Van Gogh and His Tragic Fate</h2>
@@ -324,7 +324,7 @@ The world only recognized his genius after he was gone. But in these letters, we
       </article>
     </section>
 
-    <!-- SECTION 4 -->
+ 
     <section id="beauty" class="article-section">
       <article>
         <h2>What the Word “Beauty” Hides: Traces of Ancient Goddesses</h2>
@@ -357,7 +357,7 @@ It was meant to be expansive, influential, and alive-just as it is today, when w
       </article>
     </section>
 
-    <!-- SECTION 5 -->
+ 
     <section id="unavailable" class="article-section">
       <article>
         <h2>Why We Fall in Love With the Unavailable - Psychology Meets Mythology</h2>
@@ -383,7 +383,7 @@ But perhaps the most striking discovery is this: the fascination with the unavai
       </article>
     </section>
 
-    <!-- SECTION 6 -->
+
     <section id="letters" class="article-section">
       <article>
         <h2>Why People Keep Letters - The Story of Forgotten Confessions</h2>
@@ -426,7 +426,7 @@ A letter arrived as a miracle - proof that the person on the other side of the m
     <p style="opacity:.6; padding:18px 0; text-align:center">Made with ♥ - Journal</p>
   </footer>
 
-  <!-- Minimal categories modal -->
+
   <div id="categoryModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
     <div class="modal-card" role="document">
       <div class="modal-header">
@@ -449,24 +449,24 @@ A letter arrived as a miracle - proof that the person on the other side of the m
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* 1) ОКНО КАТЕГОРИЙ (бургер) */
+
   const openBtn = document.getElementById("openModalBtn");
   const modal = document.getElementById("categoryModal");
   const closeBtn = document.getElementById("closeModalBtn");
 
-  // открыть
+
   openBtn.addEventListener("click", () => {
     modal.classList.add("open");
     openBtn.setAttribute("aria-expanded", "true");
   });
 
-  // закрыть (крестик)
+
   closeBtn.addEventListener("click", () => {
     modal.classList.remove("open");
     openBtn.setAttribute("aria-expanded", "false");
   });
 
-  // закрыть при клике вне карточки
+
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("open");
@@ -482,7 +482,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // клик на категорию → плавный скролл + закрыть окно
+
   document.querySelectorAll(".modal-list a").forEach(link => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -501,7 +501,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* 2) ПЕРЕЛИСТЫВАНИЕ (карусель) */
+
   const carousels = document.querySelectorAll(".carousel");
 
   carousels.forEach(carousel => {
@@ -526,7 +526,7 @@ document.addEventListener("DOMContentLoaded", () => {
       updateCarousel();
     });
 
-    // Swipe (touch)
+
     let startX = 0;
     track.addEventListener("touchstart", e => {
       startX = e.touches[0].clientX;
@@ -552,4 +552,5 @@ document.querySelectorAll('.read-more').forEach(btn => {
 </script>
 
 </body>
+
 </html>
